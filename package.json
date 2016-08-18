@@ -4,8 +4,7 @@
   "license": "MIT",
   "repository": "ssh+https://github.com/perfectworks/angular-sample.git",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-angular-project": "^1.0.2"
+    "gulp-angular-project": "^1.0.4"
   },
   "dependencies": {
     "angular": "^1.5.7",

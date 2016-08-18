@@ -31,7 +31,7 @@ git clone git://github.com/perfectworks/angular-sample.git
 ### 开发使用
 
 ```
-node bin/devServer.js
+node node_modules/gulp-angular-project/devServer.js
 ```
 
 然后访问本地 3000 端口就好了。
@@ -39,16 +39,12 @@ node bin/devServer.js
 ### 线上部署
 
 ```
-gulp [--cdn CDN_PATH]
+gulp --gulpfile node_modules/gulp-angular-project/gulpfile.js --cwd . [--cdn CDN_PATH]
 ```
 
 之后所有文件会打到 `dist` 目录下。如果通过 `--cdn` 指定了 `CDN_PATH`，那么所有静态文件前面都会多一个 `CDN_PATH` 作为前缀。
 
 打包完之后把整个 `dist` 目录通过你喜欢的工具传到服务器上，就行了，这个项目在线上环境是纯静态的，不需要 node 也不需要 java 什么的，有 nginx 就够了。
-
-## 其他的一些特性
-
-* 有一套 `jshint` 做语法风格检查。
 
 ## 其他
 
